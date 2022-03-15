@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seleccionar Dirección</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="panel">
+        <div>
+          <img class="sb-title-icon" src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg" alt="">
+          <span class="sb-title">Selección de Dirección</span>
+        </div>
+        <input type="text" placeholder="Dirección" id="location"/>
+        <input type="text" placeholder="Depto, Casa, etc (Opcional)"/>
+        <input type="text" placeholder="Ciudad" id="locality"/>
+        <div class="half-input-container">
+          <input type="text" class="half-input" placeholder="Estado" id="administrative_area_level_1"/>
+          <input type="text" class="half-input" placeholder="Código Postal" id="postal_code"/>
+        </div>
+        <input type="text" placeholder="País" id="country"/>
+        <button class="button-cta">Enviar</button>
+      </div>
+      <div class="map" id="map"></div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV9BWqlGc6EK2C4eyf45BJVjlLWoJDkIw&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+  </body>
+</html>
